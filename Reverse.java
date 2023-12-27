@@ -1,9 +1,20 @@
-/**
- * Prints a given string, backward. Then prints the middle character in the string.
- * The program expects to get one command-line argument: A string.
- */
 public class Reverse {
-	public static void main (String[] args){
-		//// Put your code here
-	}
+    public static void main(String[] args) {
+
+        String a = (args[0]);
+        String aRvs = ""; 
+        String middle = ""; 
+
+        for (int i = (a.length() - 1); i >= 0; i--) {
+            if ( i == (a.length() / 2) ) {
+                middle = middle + a.charAt(i); 
+            }
+            char b = a.charAt(i);
+
+            aRvs = aRvs + b;
+        }
+
+        System.out.println(aRvs);
+        System.out.println("The middle character is " + middle); 
+    }
 }
