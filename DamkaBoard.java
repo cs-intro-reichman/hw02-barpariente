@@ -5,7 +5,7 @@ public class DamkaBoard {
         String rows = ""; 
         
         for (int i = 0; i<a; i++ ){
-            rows = rows + "* " ; 
+            rows = rows + " *" ; 
 
         }
         for (int i = 0; i<a; i++ ){
