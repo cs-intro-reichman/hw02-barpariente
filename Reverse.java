@@ -21,10 +21,10 @@ public class Reverse {
                 middle = middle + a.charAt(i); 
 
             }
-            char b = a.charAt(i);
-
-            aRvs = aRvs + b;
+            
         }
+            char b = a.charAt(i);
+            aRvs = aRvs + b;
     }
 
         System.out.println(aRvs);
