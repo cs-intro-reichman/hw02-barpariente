@@ -8,7 +8,7 @@ public class DamkaBoard {
             rows = rows + "* " ; 
 
         }
-        for (int i = 0; i<a; i++ ){
+        for (int i = 1; i <= a; i++ ){
             if ((i%2) == 0){
                 System.out.println(" " + rows);
             }
