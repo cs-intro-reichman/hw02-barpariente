@@ -5,11 +5,16 @@ public class DamkaBoard {
         String rows = ""; 
         
         for (int i = 0; i<a; i++ ){
-            rows = rows + " *" ; 
+            rows = rows + "* " ; 
 
         }
         for (int i = 0; i<a; i++ ){
-            System.out.println(rows); 
+            if ((i%2) == 0){
+                System.out.println(rows);
+            }
+            else {
+                System.out.println(" " + rows);
+            } 
 
         }
     }
