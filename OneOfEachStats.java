@@ -41,7 +41,7 @@ public class OneOfEachStats {
 
 }
         double avarege = ((double)(avg) / (double) (T)); 
-        System.out.println("Average: " + avarege + " children to get at least one of each gender");
+        System.out.println("Average: " + avarege + " children to get at least one of each gender.");
         System.out.println("Number of families with 2 children: " + families2);
         System.out.println("Number of families with 3 children: " + families3);
         System.out.println("Number of families with 4 or more children: " + families4);   
