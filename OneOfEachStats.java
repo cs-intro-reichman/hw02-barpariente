@@ -1,7 +1,13 @@
+import java.util.Random;
+
 public class OneOfEachStats {
     public static void main(String[] args) {
         
-        int T = Integer.parseInt(args[0]); 
+        int T = Integer.parseInt(args[0]);
+        int seed = Integer.parseInt(args[1]);
+        Random generator = new Random (seed);
+
+
         int families2 = 0; 
         int families3 = 0; 
         int families4 = 0; 
@@ -13,12 +19,12 @@ public class OneOfEachStats {
 
             child = 1; 
 
-            int first = (int)((Math.random()*2));
-            int gender = first;
+            double first = generator.nextDouble();
+            double gender = first;
 
-                while (gender == first) {
+                while ((int)(gender*2) == (int)(first*2)) {
 
-                    gender = (int)((Math.random()*2));
+                    gender = generator.nextDouble();
                     
                     child ++; 
                  }
